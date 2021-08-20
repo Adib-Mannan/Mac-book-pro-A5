@@ -1,9 +1,10 @@
+// price function 
 function price(product, money) {
     const extraProduct = document.getElementById(product);
     extraProduct.innerText = money;
     totalPrice();
 }
-
+// totalprice function 
 function totalPrice() {
     const bestPrice = document.getElementById('best-price');
     const bestPriceTotal = parseInt(bestPrice.innerText);
@@ -19,6 +20,7 @@ function totalPrice() {
     const displayPrice = document.getElementById('display-price');
     displayPrice.innerText = total;
 }
+// discountCondition function 
 function discountCondition() {
     const bestPrice = document.getElementById('best-price');
     const bestPriceTotal = parseInt(bestPrice.innerText);
@@ -78,8 +80,9 @@ document.getElementById('free-delivery').addEventListener('click', function () {
 document.getElementById('paid-delivery').addEventListener('click', function () {
     price('delivery-charge', 20);
 })
+//delivery option click handler end
 
-// submit 
+// pomo section
 document.getElementById('apply-button').addEventListener('click', function () {
     const discount = document.getElementById('pomo-code-input');
     const discountCode = discount.value;
@@ -88,3 +91,5 @@ document.getElementById('apply-button').addEventListener('click', function () {
         discount.value = '';
     }
 })
+
+// -------------------END--------------------
