@@ -85,5 +85,6 @@ document.getElementById('apply-button').addEventListener('click', function () {
     const discountCode = discount.value;
     if (discountCode == 'stevekaku') {
         discountCondition()
+        discount.value = '';
     }
 })
